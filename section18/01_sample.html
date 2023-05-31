@@ -1,0 +1,83 @@
+<!DOCTYPE html>  <!-- 독타입 : 나는 HTML5이다. -->
+<html lang="ko">  <!-- 태그명: html, 속성명: lang, 속성값: "en, ko, ..." -->
+<head>
+    <meta charset="UTF-8">
+    <title>환영합니다</title>
+    <style>
+        /* CSS 구역 */
+        #section1 {  /* id="section1" */
+            font-size: 28px;
+        }
+        #section2 {
+            font-size: 8px;
+        }
+        .class1 {  /* class="class1" */
+            background-color: yellow;
+        }
+        .class2 {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    안녕하세요. 반갑습니다.
+
+    <!-- heading 태그 : 제목 -->
+    <h1>여기가 가장 큰 제목</h1>
+    <h6>여기가 가장 작은 제목</h6>
+
+    <!-- unordered list 태그 : 순서가 없는 목록 -->
+    <ul>
+        <li>카페</li>
+        <li>메일</li>
+        <li>뉴스</li>
+        <li>지도</li>
+        <li>증권</li>
+    </ul>
+
+    <!-- ordered list 태그 : 순서가 있는 목록 -->
+    <ol>
+        <li>카페</li>
+        <li>메일</li>
+        <li>뉴스</li>
+        <li>지도</li>
+        <li>증권</li>
+    </ol>
+
+    <!-- anchor 태그 : 링크 만들기 -->
+    <a href="https://www.daum.net/">다음을 시작페이지로!</a>
+
+    <!-- break line 태그 : 줄 바꿈 -->
+    <br><br/>
+
+    <!-- image 태그 : 그림 -->
+    <img src="https://t1.daumcdn.net/daumtop_chanel/op/20210830073649281.png">
+
+    <!-- 연습 : 다음 로고 만들기 -->
+    <a href="https://www.daum.net/">
+        <img src="https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png">
+    </a>
+
+    <!-- global 속성 : 모든 태그들이 가질 수 있는 속성 -->
+    <!-- 1. id 속성 : 어떤 태그를 식별하기 위한 속성. 해당 페이지에서 유일한 값을 가진다. -->
+    <!-- 2. class 속성 : 비슷한 요소들을 묶기 위한 속성. 여러 값을 가지거나 여러 클래스를 가진다. -->
+
+    <!-- 구역 설정 태그 : 블록 단위 구역 -->
+    <div id="section1" class="class1">
+        여기는 1구역!
+    </div>
+    <div id="section2" class="class1">
+        여기는 2구역!
+    </div>
+
+    <!-- 구역 설정 태그 : 인라인 구역 -->
+    <div id="section3">
+        여기는 <span class="class1 class2">3구역!</span>  <!-- 2개의 클래스 지정하기 -->
+    </div>
+    <div id="section4">
+        여기는 <span class="class1 class2">4구역!</span>
+    </div>
+
+</body>
+</html>
